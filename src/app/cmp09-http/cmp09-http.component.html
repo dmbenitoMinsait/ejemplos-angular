@@ -1,0 +1,28 @@
+<h2>Peticiones Http</h2>
+
+<form [formGroup]="formEditar" (ngSubmit)="actualizar()">
+    <div class="form-group" >
+        <label for="" class="form-label">Titulo</label>
+        <input type="text" id="titulo" formControlName="titulo" class="form-control">
+    </div>
+    <div>
+        <label for="completada" class="form-label">Completada:</label>
+        <input class="mx-2 form-check-input" type="checkbox" id="completada" formControlName="completada">
+    </div>
+    <button class="btn btn-secondary mb-2" type="submit" [disabled]="formEditar.invalid">Actualizar</button>
+</form>
+
+<button (click)="guardar()" class="btn btn-primary mb-2">Crear tarea</button>
+
+<ul>
+    <li class="pb-2" *ngFor="let t of listaTareas">
+        {{t.titulo}} ({{t.completada ? 'completada' : 'no completada'}})
+        <button class="btn btn-success" (click)="completar(t)">Hacer/Deshacer tarea</button>
+        <button class="btn btn-danger" (click)="eliminar(t.id!)">Eliminar tarea</button> <!-- La exclamación es para indicarle al compilador que no va a llegar como null -->
+        <button class="btn btn-primary" (click)="rellenarFormulario(t)">Editar tarea</button>
+
+    </li>
+</ul>
+
+
+<br>

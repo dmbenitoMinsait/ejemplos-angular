@@ -1,0 +1,10 @@
+<h2 class="mt-5">Servicios</h2>
+
+<input type="text" #inputMsg class="form-control" placeholder="Escribe tu error">
+<div class="text-center">
+    <button (click)="mostrarError(inputMsg.value)" class="btn btn-danger">Mostrar como error</button>
+    <button (click)="mostrarWarning(inputMsg.value)" class="btn btn-warning m-2">Mostrar como warning</button>
+</div>
+
+<app-cmp-a></app-cmp-a>
+<app-cmp-b></app-cmp-b>

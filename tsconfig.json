@@ -19,7 +19,7 @@
     "target": "es2017", // versión a la que transpilamos el código
     "module": "es2020", // configuración de typescript
     "lib": [
-      "es2020",
+      "es2021",
       "dom"
     ]
   },

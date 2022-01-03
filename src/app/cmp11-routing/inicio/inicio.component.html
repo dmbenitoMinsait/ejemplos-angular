@@ -1,0 +1,12 @@
+<h3>Usuarios</h3>
+
+<ul>
+    <li *ngFor="let u of listaUsuarios">
+        {{u.nombre}}
+        <a class="mx-2" [routerLink]="['/usuarios', u.id, 'info']" [state]="{usuario: u}">Ver info</a>
+        <a [routerLink]="['/usuarios', u.id, 'editar']">Editar</a>
+    </li>
+</ul>
+
+<!-- Este componente tiene childrens, luego le tenemos que poner el router-outlet  -->
+<router-outlet></router-outlet>

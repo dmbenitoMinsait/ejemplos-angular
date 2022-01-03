@@ -1,0 +1,12 @@
+<h3>Página de inicio</h3>
+
+<div *ngIf="estasLogueado; else noLogueado">
+    <p>Bienvenido {{nombre}}</p>
+</div>
+
+<ng-template #noLogueado>
+    <div>
+        <p>Logueate por favor</p>
+    </div>
+</ng-template>
+

@@ -1,0 +1,86 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "El niño murciélago reaparece en la playa",
+      "contenido": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, maxime iure porro cumque in nemo officiis pariatur ea assumenda! Vero doloribus qui totam blanditiis laboriosam tenetur quis, perspiciatis esse itaque.",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "titulo": "El caballo blanco de Santiago no era blanco",
+      "contenido": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, maxime iure porro cumque in nemo officiis pariatur ea assumenda! Vero doloribus qui totam blanditiis laboriosam tenetur quis, perspiciatis esse itaque.",
+      "userId": 2
+    },
+    {
+      "titulo": "Aumenta la venta de pitos y flautas",
+      "contenido": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, maxime iure porro cumque in nemo officiis pariatur ea assumenda! Vero doloribus qui totam blanditiis laboriosam tenetur quis, perspiciatis esse itaque.",
+      "id": 3,
+      "userId": 2
+    },
+    {
+      "titulo": "Prueba",
+      "contenido": "Esto es una prueba con el POSTMAN",
+      "autorID": "1",
+      "id": 2
+    },
+    {
+      "titulo": "Noticia 3",
+      "contenido": "Contenido 3",
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "titulo": "Noticia 4",
+      "contenido": "Noticia de bbb@gmail.com",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "titulo": "Noticia 5",
+      "contenido": "Lo acabo de crear desde el input",
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "titulo": "Noticia 6",
+      "contenido": "Después de añadir el NgZone",
+      "userId": 2,
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "username": "bbb",
+      "password": "1234",
+      "nombre": "BBBB",
+      "email": "bbb@gmail.com",
+      "rol": "USER",
+      "id": 1
+    },
+    {
+      "username": "aaa",
+      "password": "1234",
+      "nombre": "AAAA",
+      "email": "aaa@gmail.com",
+      "rol": "USER",
+      "id": 2
+    },
+    {
+      "username": "aaa",
+      "password": "1234",
+      "nombre": "AAAA",
+      "email": "ccc@gmail.com",
+      "rol": "USER",
+      "id": 3
+    },
+    {
+      "username": "aaa",
+      "password": "1234",
+      "nombre": "AAAA",
+      "email": "ddd@gmail.com",
+      "rol": "USER",
+      "id": 4
+    }
+  ]
+}

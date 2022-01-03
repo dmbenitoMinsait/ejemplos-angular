@@ -1,0 +1,22 @@
+<br>
+<div class="video">
+    <video src="assets/video.mp4" #video width="200" (timeupdate)="actualizarProgreso($event)"
+    (loademetadata)="setDuration()"></video>
+    <div>
+        <button (click)="play(video)">Play</button>
+        <button (click)="pause(video)">Pause</button>
+        <button (click)="fullScreen(video)">Full screen</button>
+        <button (click)="replay(video)">Replay</button>
+        <button (click)="mute(video)">Mute</button>
+        <button (click)="subirVolumen()">+ volumen</button>
+        <button (click)="bajarVolumen()">- volumen</button>
+        <button (click)="retroceder()">Retroceder</button>
+
+    </div>
+    <div>
+        <input type="range" min="0" max="100" (input)="cambiarVolumen(video, $event)" 
+        [value]="currentVolume">
+        <progress [value]="currentTime" [max]="getDuration(video)" buffer="0.5"></progress>
+    </div>
+
+</div>

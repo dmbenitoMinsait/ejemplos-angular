@@ -1,0 +1,7 @@
+<h3 class="mt-5">CMP A</h3>
+
+<input type="text" class="form-control" #inputTxt>
+<button (click)="guardar(inputTxt.value)" class="btn btn-primary">Guardar datos</button>
+<ul>
+    <li *ngFor="let dato of datos"> {{dato}} </li>
+</ul>

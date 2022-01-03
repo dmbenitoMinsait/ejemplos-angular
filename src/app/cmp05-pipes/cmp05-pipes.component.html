@@ -1,0 +1,43 @@
+<h2>Pipes</h2>
+
+<div>
+    <h4> {{producto.titulo}} </h4> 
+    <p> {{producto.descripcion}}... </p>
+    <div class="">
+        <span> {{producto.precio | doble:1000}} </span>
+        <span> {{producto.fechaLanzamiento}} </span>
+    </div>
+</div>
+
+<div>
+    <h4> {{producto.titulo | titlecase}} </h4> <!-- titlecase: primera letra en mayúsculas, uppercase, lowercase -->
+    <p> {{producto.descripcion | slice:0:150}}... </p> <!-- es un substring -->
+    <div class="">
+        <span> {{producto.precio | currency:'EUR'}} </span>
+        <span> {{producto.fechaLanzamiento | date:'dd/MM/yyyy'}} </span> <!-- Puedes ir poniendo más letras a los meses para que te salga el nombre entero -->
+    </div>
+</div>
+
+<!-- pre: para mantener el texto sin formatear -->
+<pre> {{producto | json}} </pre>
+
+<div> {{ {a: 1, b: 2} | keyvalue | json}} </div>
+
+<input type="text" (change)="addTarea($event)">
+<ul>
+    <li *ngFor="let tarea of tareas"> {{tarea}} </li>
+</ul>
+
+<input type="text" [(ngModel)]="filtroTxt">
+<ul>
+    <li *ngFor="let tarea of tareas | filtro:filtroTxt"> {{tarea}} </li>
+</ul>
+
+
+<p> {{"hola que tal" | reverse}} </p>
+<p> {{"esto puede estar ooono baneado pero no" | ocultarPalabras:["puede", "no"]}} </p>
+
+<pre> {{datosPost1 | async | json}} </pre>
+
+
+

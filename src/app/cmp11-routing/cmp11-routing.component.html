@@ -1,0 +1,13 @@
+<h2 class="mt-5">Routing</h2>
+
+<div>
+    <p><a [routerLink]="['/']">Inicio</a></p>
+    <p><a routerLink="/nuevo-usuario">Nuevo usuario</a></p>
+    <p><a routerLink="/tarjeta-credito">Tarjeta crédito</a></p>
+    <!-- Podemos escribir las rutas con array separando por comas cada elemento o todo seguido -->
+
+    <!--  /usuario/4/info => ['/usuarios', usuario.id, 'info'] -->
+    
+</div>
+
+<router-outlet></router-outlet>

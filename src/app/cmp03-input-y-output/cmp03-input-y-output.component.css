@@ -1,0 +1,6 @@
+.caja-sugus{
+    display: flex;
+    justify-content: space-evenly; 
+    /* align-items: center;  Para centrar las cosas en el eje de la y*/
+    flex-wrap: wrap; /* Lo hace responsive */
+}

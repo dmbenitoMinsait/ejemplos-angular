@@ -20,14 +20,11 @@
 <h3>Event Binding</h3>
 <button type="button"  (click)="cambiarNombre('Mike Kozinski', $event)">Cambiar nombre de Falco</button>
 
-
-
-
 <h3>Two Way Data Binding</h3>
 <input type="text" [(ngModel)] = "nombre">
 
 
 <h3>Ejercicio: simula el Two Way Data Binding</h3>
-<input type="text" [value]="valor"  (input)="valorCambiado($event)">
+<input type="text" [value]="valor" (input)="valorCambiado($event)">
 {{valor}}
 
